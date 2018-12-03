@@ -23,14 +23,13 @@ require "cerberus"
 TODO: Write usage instructions here
 
 ## Roadmap
-[ ] Implement `:database_authenticatable`
-[ ] Implement `:validatable`
-[ ] Implement generator based on Amber's Granite auth generator
-[ ] Implement `:recoverable`
-[ ] Implement `:confirmable`
-[ ] Implement `:lockable`
-[ ] Implement `:timeoutable`
-[ ] Implement 
+- [ ] Implement `:database_authenticatable`
+- [ ] Implement `:validatable`
+- [ ] Implement generator based on Amber's Granite auth generator
+- [ ] Implement `:recoverable`
+- [ ] Implement `:confirmable`
+- [ ] Implement `:lockable`
+- [ ] Implement `:timeoutable`
 
 ## Contributing
 
