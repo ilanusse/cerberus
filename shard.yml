@@ -11,6 +11,15 @@ crystal: 0.27.0
 
 license: MIT
 
+targets:
+  cerberus:
+    main: src/cerberus/cli.cr
+
+dependencies:
+  cli:
+    github: mosop/cli
+    version: ~> 0.7.0
+
 development_dependencies:
   ameba:
     github: veelenga/ameba
