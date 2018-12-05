@@ -10,8 +10,8 @@ module Cerberus::CLI
     @name : String
     @fields : Array(Field)
     @visible_fields : Array(String)
-    @database : String = CLI.config.database
-    @language : String = CLI.config.language
+    @database : String = "pg"
+    @language : String = "ecr"
     @timestamp : String
     @table_name : String?
     @primary_key : String

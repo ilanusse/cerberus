@@ -19,6 +19,12 @@ dependencies:
   cli:
     github: mosop/cli
     version: ~> 0.7.0
+  teeplate:
+    github: mosop/teeplate
+    version: ~> 0.7.0
+  inflector:
+    github: phoffer/inflector.cr
+    version: ~> 0.1.8
 
 development_dependencies:
   ameba:

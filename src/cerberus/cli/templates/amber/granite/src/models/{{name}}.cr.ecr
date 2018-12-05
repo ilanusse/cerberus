@@ -6,10 +6,10 @@ class <%= class_name %> < Granite::Base
 
   primary id : Int64
   <% @fields.reject{|f| f.hidden }.each do |field| -%>
-    field <%= field.name %> : <%= field.cr_type %>
+  field <%= field.name %> : <%= field.cr_type %>
   <% end -%>
   <% if @database != "sqlite" -%>
-    timestamps
+  timestamps
   <% end -%>
 
   cerberus :database_authenticatable, :database

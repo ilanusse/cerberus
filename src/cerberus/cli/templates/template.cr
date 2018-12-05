@@ -3,7 +3,8 @@ require "random/secure"
 require "inflector"
 
 require "../helpers/helpers"
-require "./amber_granite"
+require "../logger"
+require "./amber_granite_template"
 
 module Cerberus::CLI
   class Template
@@ -30,7 +31,7 @@ module Cerberus::CLI
     def generate(framework : String, options = nil)
       case framework
       when "amber"
-        info "Rendering Cerberus for Cerberus for class_name: #{name}"
+        info "Rendering Cerberus for #{framework} for class_name: #{name}"
         # Only Granite is supported for now
         # TODO: Support generators for Crecto and Jennifer
         AmberGraniteTemplate.new(name, fields).render(directory, list: true, color: true)

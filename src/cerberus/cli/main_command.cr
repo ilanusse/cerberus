@@ -1,12 +1,18 @@
-require "../version"
 require "cli"
-#require "./recipes/recipe"
+require "logger"
+
+require "../version"
+require "./logger_builder"
 require "./templates/template"
 require "./command"
 require "./commands/*"
 
 module Cerberus::CLI
-  #include Cerberus::Environment
+  @@logger : Logger?
+
+  def self.logger
+    @@logger ||= LoggerBuilder.logger(STDOUT)
+  end
 
   class MainCommand < ::Cli::Supercommand
     command_name "cerberus"
