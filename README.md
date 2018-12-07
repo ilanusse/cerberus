@@ -23,11 +23,15 @@ require "cerberus"
 TODO: Write usage instructions here
 
 ## Roadmap
-- [ ] Implement `:database_authenticatable`
-- [ ] Implement `:validatable`
-- [ ] Implement generator based on Amber's Granite auth generator
+- [X] Implement generator based on Amber's Granite auth generator
+- [ ] Implement `:database_authenticatable` -> UNDERWAY
+- [ ] Implement `:validatable` -> UNDERWAY
+- [ ] Implement `:registerable` -> UNDERWAY
 - [ ] Implement `:recoverable`
 - [ ] Implement `:confirmable`
+- [ ] Extend generator for use with Amber & Crecto
+- [ ] Extend generator for use with Lucky
+- [ ] Extend generator for use with Amber & Jennifer
 - [ ] Implement `:lockable`
 - [ ] Implement `:timeoutable`
 
